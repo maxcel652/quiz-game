@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="title"></p>
+    <button>click me</button>
+    <script>
+        let title = document.getElementById("title")
+        title.innerHTML = "My DOM exercise"
+        title.style.color = "red"
+        title.style.fontSize = "24px"
+        let button = document.querySelector("button")
+        button.addEventListener("click",function(){
+            title.innerHTML = "button was clicked"
+        })
+   
+    
+    </script>
+</body>
+</html>
