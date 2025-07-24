@@ -4,21 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #quiz-container{
+            max-width: 600px; margin: auto; text-align: center;
+        }
+        #question{
+            font-size: 1.5em;
+        }
+        .options{
+            margin: 10px 0;cursor: pointer;
+        }
+        #score{
+            font-size: 1.2em;color: green;
+        }
+        #submit-btn{
+            margin-top: 20px;
+        }
+        
+    </style>
 </head>
 <body>
-    <p id="title"></p>
-    <button>click me</button>
-    <script>
-        let title = document.getElementById("title")
-        title.innerHTML = "My DOM exercise"
-        title.style.color = "red"
-        title.style.fontSize = "24px"
-        let button = document.querySelector("button")
-        button.addEventListener("click",function(){
-            title.innerHTML = "button was clicked"
-        })
-   
+    <div id="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit-btn">Submit Answer</button>
+        <div id="score"></div>
+    </div>
+
+    <script src="quiz.js"></script>
     
-    </script>
 </body>
 </html>
